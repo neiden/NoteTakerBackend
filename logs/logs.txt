@@ -302,3 +302,75 @@ token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hid
 2024-04-01 18:05:52.484 -07:00 [INF] Application started
 2024-04-01 18:06:06.622 -07:00 [INF] Received JWT: 
 2024-04-02 16:25:23.662 -07:00 [INF] Received JWT: 
+2024-04-04 11:19:37.303 -07:00 [INF] Application started
+2024-04-04 11:19:50.357 -07:00 [INF] Received JWT: 
+2024-04-04 11:19:50.854 -07:00 [INF] Controller called: Logging in user with login 
+2024-04-04 11:19:50.861 -07:00 [INF] Service called: Getting user with login 
+2024-04-04 11:19:51.246 -07:00 [INF] Received JWT: 
+2024-04-04 11:19:51.251 -07:00 [INF] Controller called: Logging in user with login 
+2024-04-04 11:19:51.253 -07:00 [INF] Service called: Getting user with login 
+2024-04-04 11:20:00.057 -07:00 [INF] Received JWT: 
+2024-04-04 11:20:00.068 -07:00 [INF] Controller called: Logging in user with login 
+2024-04-04 11:20:00.071 -07:00 [INF] Service called: Getting user with login 
+2024-04-04 11:20:00.401 -07:00 [INF] Received JWT: 
+2024-04-04 11:20:00.403 -07:00 [INF] Received JWT: 
+2024-04-04 11:20:00.403 -07:00 [INF] Controller called: Logging in user with login 
+2024-04-04 11:20:00.405 -07:00 [INF] Controller called: Logging in user with login 
+2024-04-04 11:20:00.406 -07:00 [INF] Service called: Getting user with login 
+2024-04-04 11:20:00.408 -07:00 [INF] Service called: Getting user with login 
+2024-04-04 11:20:00.736 -07:00 [INF] Received JWT: 
+2024-04-04 11:20:00.736 -07:00 [INF] Received JWT: 
+2024-04-04 11:20:00.739 -07:00 [INF] Controller called: Logging in user with login 
+2024-04-04 11:20:00.741 -07:00 [INF] Controller called: Logging in user with login 
+2024-04-04 11:20:00.742 -07:00 [INF] Service called: Getting user with login 
+2024-04-04 11:20:00.745 -07:00 [INF] Service called: Getting user with login 
+2024-04-04 11:20:01.126 -07:00 [INF] Received JWT: 
+2024-04-04 11:20:01.130 -07:00 [INF] Controller called: Logging in user with login 
+2024-04-04 11:20:01.134 -07:00 [INF] Service called: Getting user with login 
+2024-04-04 11:22:39.581 -07:00 [INF] Received JWT: 
+2024-04-04 11:22:48.083 -07:00 [INF] Received JWT: 
+2024-04-04 11:22:48.086 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-04 11:22:48.088 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-04 11:22:48.237 -07:00 [INF] Controller: User Login logged in
+2024-04-04 11:28:56.843 -07:00 [INF] Application started
+2024-04-04 11:29:05.673 -07:00 [INF] Received JWT: 
+2024-04-04 11:29:05.819 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-04 11:29:05.828 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-04 11:29:15.538 -07:00 [INF] Controller: User Eren logged in
+2024-04-04 11:29:45.126 -07:00 [INF] Received JWT: 
+2024-04-04 11:29:45.136 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-04 11:29:45.139 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-04 11:29:55.881 -07:00 [INF] Received JWT: 
+2024-04-04 11:29:55.900 -07:00 [INF] Controller called: Logging in user with login Erenn
+2024-04-04 11:29:55.914 -07:00 [INF] Service called: Getting user with login Erenn
+2024-04-04 11:38:21.995 -07:00 [INF] Received JWT: 
+2024-04-04 11:38:21.998 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-04 11:38:22.000 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-04 11:38:28.770 -07:00 [INF] Controller: User Eren logged in
+2024-04-04 11:39:00.474 -07:00 [INF] Received JWT: 
+2024-04-04 11:39:00.477 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-04 11:39:00.479 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-04 11:39:00.534 -07:00 [INF] Controller: User Eren logged in
+2024-04-04 11:49:17.058 -07:00 [INF] Received JWT: 
+2024-04-04 11:49:17.062 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-04 11:49:17.065 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-04 11:49:25.825 -07:00 [INF] Controller: User Eren logged in
+2024-04-08 12:00:56.376 -07:00 [INF] Application started
+2024-04-08 12:50:59.802 -07:00 [INF] Application started
+2024-04-08 12:51:04.828 -07:00 [INF] Received JWT: 
+2024-04-08 12:51:14.251 -07:00 [INF] Received JWT: 
+2024-04-08 12:51:43.414 -07:00 [INF] Received JWT: 
+2024-04-08 12:54:12.846 -07:00 [INF] Received JWT: 
+2024-04-08 12:54:13.550 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-08 12:54:13.560 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-08 12:54:54.747 -07:00 [INF] Received JWT: 
+2024-04-08 12:54:54.754 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-08 12:54:54.759 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-08 12:55:12.329 -07:00 [INF] Controller: User Eren logged in
+2024-04-08 12:55:52.053 -07:00 [INF] Received JWT: 
+2024-04-08 12:55:52.060 -07:00 [INF] Controller called: Logging in user with login e
+2024-04-08 12:55:52.063 -07:00 [INF] Service called: Getting user with login e
+2024-04-08 12:55:59.897 -07:00 [INF] Received JWT: 
+2024-04-08 12:55:59.901 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-08 12:55:59.903 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-08 12:56:00.075 -07:00 [INF] Controller: User Eren logged in

@@ -62,7 +62,7 @@ public class UserController : ControllerBase
         };
         var token = tokenHandler.CreateToken(tokenDescriptor);
         var tokenString = tokenHandler.WriteToken(token);
-        Log.Information("Controller: User {0} logged in", login);
+        Log.Information("Controller: User {0} logged in", login.Username);
 
         return Ok(new { Token = tokenString, UserId = user.Id });
     }

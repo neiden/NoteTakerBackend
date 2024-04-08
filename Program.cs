@@ -66,6 +66,17 @@ else
 
 // builder.Services.AddDbContext<PersonDbContext>(options =>
 //     options.UseSqlServer(connection));
+var AllowedOriginPolicy = "_allowedOriginPolicy";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: AllowedOriginPolicy,
+        builder =>
+        {
+            builder.WithOrigins("https://zealous-bay-0ad4fdf10.5.azurestaticapps.net", "http://localhost:4200")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
 
 builder.Services.AddDbContext<Token.Data.TokenContext>(options =>
     options.UseSqlServer(connection));
@@ -88,6 +99,9 @@ if (app.Environment.IsDevelopment())
 
 
 app.UseHttpsRedirection();
+
+app.UseCors(AllowedOriginPolicy);
+
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -139,3 +139,4 @@ C:\Users\Pinkgodzilla\Documents\TokenTest\bin\Debug\net8.0\Serilog.dll
 C:\Users\Pinkgodzilla\Documents\TokenTest\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Users\Pinkgodzilla\Documents\TokenTest\bin\Debug\net8.0\Serilog.Sinks.File.dll
 C:\Users\Pinkgodzilla\Documents\TokenTest\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Pinkgodzilla\Documents\TokenTest\obj\Debug\net8.0\TokenTest.sourcelink.json
