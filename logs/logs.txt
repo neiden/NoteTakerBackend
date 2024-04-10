@@ -374,3 +374,67 @@ token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hid
 2024-04-08 12:55:59.901 -07:00 [INF] Controller called: Logging in user with login Eren
 2024-04-08 12:55:59.903 -07:00 [INF] Service called: Getting user with login Eren
 2024-04-08 12:56:00.075 -07:00 [INF] Controller: User Eren logged in
+2024-04-10 12:12:49.749 -07:00 [INF] Application started
+2024-04-10 12:24:26.970 -07:00 [INF] Received JWT: 
+2024-04-10 12:24:27.387 -07:00 [INF] Controller called: Logging in user with login asdj
+2024-04-10 12:24:27.395 -07:00 [INF] Service called: Getting user with login asdj
+2024-04-10 12:24:27.814 -07:00 [INF] Received JWT: 
+2024-04-10 12:24:27.820 -07:00 [INF] Controller called: Logging in user with login asdj
+2024-04-10 12:24:27.823 -07:00 [INF] Service called: Getting user with login asdj
+2024-04-10 12:24:30.685 -07:00 [INF] Received JWT: 
+2024-04-10 12:24:30.694 -07:00 [INF] Controller called: Logging in user with login asdj
+2024-04-10 12:24:30.698 -07:00 [INF] Service called: Getting user with login asdj
+2024-04-10 12:48:49.712 -07:00 [INF] Received JWT: 
+2024-04-10 12:48:49.716 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-10 12:48:49.718 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-10 12:48:53.946 -07:00 [INF] Received JWT: 
+2024-04-10 12:48:53.949 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-04-10 12:48:53.951 -07:00 [INF] Service called: Getting user with login Eren
+2024-04-10 12:48:58.266 -07:00 [INF] Controller: User Eren logged in
+2024-04-10 12:48:58.520 -07:00 [INF] Controller: User Eren logged in
+2024-04-10 13:31:08.452 -07:00 [INF] Application started
+2024-04-10 13:31:43.689 -07:00 [INF] Received JWT: 
+2024-04-10 13:34:38.034 -07:00 [INF] Application started
+2024-04-10 13:34:40.530 -07:00 [INF] Received JWT: 
+2024-04-10 13:35:32.748 -07:00 [INF] Received JWT: 
+2024-04-10 13:35:32.992 -07:00 [INF] Controller called: Creating user with login pinkgodzilla
+2024-04-10 13:35:33.002 -07:00 [INF] Service called: Creating user with login pinkgodzilla
+2024-04-10 13:36:01.416 -07:00 [INF] Received JWT: 
+2024-04-10 13:36:01.447 -07:00 [INF] Controller called: Creating user with login pinkgodzilla
+2024-04-10 13:36:01.449 -07:00 [INF] Service called: Creating user with login pinkgodzilla
+2024-04-10 13:36:36.989 -07:00 [INF] Application started
+2024-04-10 13:36:44.527 -07:00 [INF] Received JWT: 
+2024-04-10 13:36:44.662 -07:00 [INF] Controller called: Getting all users
+2024-04-10 13:36:44.667 -07:00 [INF] Service called: Getting all users
+2024-04-10 13:39:41.995 -07:00 [INF] Received JWT: 
+2024-04-10 13:39:42.080 -07:00 [INF] Controller called: Creating user with login pinkgodzilla
+2024-04-10 13:39:42.088 -07:00 [INF] Service called: Creating user with login pinkgodzilla
+2024-04-10 13:39:49.558 -07:00 [INF] Received JWT: 
+2024-04-10 13:39:49.567 -07:00 [INF] Controller called: Getting all users
+2024-04-10 13:39:49.570 -07:00 [INF] Service called: Getting all users
+2024-04-10 13:43:47.317 -07:00 [INF] Received JWT: 
+2024-04-10 13:43:47.332 -07:00 [INF] Controller called: Logging in user with login john
+2024-04-10 13:43:47.337 -07:00 [INF] Service called: Getting user with login john
+2024-04-10 13:44:02.777 -07:00 [INF] Received JWT: 
+2024-04-10 13:44:02.780 -07:00 [INF] Controller called: Logging in user with login pinkgodzilla
+2024-04-10 13:44:02.783 -07:00 [INF] Service called: Getting user with login pinkgodzilla
+2024-04-10 13:44:02.852 -07:00 [INF] Controller: User pinkgodzilla logged in
+2024-04-10 13:44:27.790 -07:00 [INF] Received JWT: 
+2024-04-10 13:44:27.793 -07:00 [INF] Controller called: Creating user with login pinkgodzilla
+2024-04-10 13:44:27.801 -07:00 [INF] Service called: Creating user with login pinkgodzilla
+2024-04-10 13:46:32.629 -07:00 [INF] Received JWT: 
+2024-04-10 13:46:32.640 -07:00 [INF] Controller called: Getting all users
+2024-04-10 13:46:32.642 -07:00 [INF] Service called: Getting all users
+2024-04-10 13:47:37.330 -07:00 [INF] Received JWT: 
+2024-04-10 13:47:37.333 -07:00 [INF] Controller called: Creating user with login Dirkin
+2024-04-10 13:47:37.338 -07:00 [INF] Service called: Creating user with login Dirkin
+2024-04-10 13:47:55.743 -07:00 [INF] Received JWT: 
+2024-04-10 13:47:55.746 -07:00 [INF] Controller called: Getting all users
+2024-04-10 13:47:55.750 -07:00 [INF] Service called: Getting all users
+2024-04-10 13:48:07.917 -07:00 [INF] Received JWT: 
+2024-04-10 13:48:07.920 -07:00 [INF] Controller called: Logging in user with login Dirkin
+2024-04-10 13:48:07.923 -07:00 [INF] Service called: Getting user with login Dirkin
+2024-04-10 13:48:07.976 -07:00 [INF] Controller: User Dirkin logged in
+2024-04-10 13:48:11.604 -07:00 [INF] Received JWT: 
+2024-04-10 13:48:11.607 -07:00 [INF] Controller called: Logging in user with login Dirkin
+2024-04-10 13:48:11.609 -07:00 [INF] Service called: Getting user with login Dirkin

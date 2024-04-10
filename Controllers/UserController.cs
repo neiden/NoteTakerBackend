@@ -67,6 +67,7 @@ public class UserController : ControllerBase
         return Ok(new { Token = tokenString, UserId = user.Id });
     }
 
+
     [HttpGet("{id}")]
     public async Task<IActionResult> GetUserById(int id)
     {
@@ -79,6 +80,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAllUsers()
     {
         Log.Information("Controller called: Getting all users");
@@ -86,10 +88,15 @@ public class UserController : ControllerBase
         return Ok(users);
     }
 
-    [HttpPost]
-    public async Task<IActionResult> CreateUser(User user)
+    [HttpPost("register")]
+    [AllowAnonymous]
+    public async Task<IActionResult> CreateUser([FromBody] User user)
     {
         Log.Information("Controller called: Creating user with login {0}", user.Login);
+        if (await _userService.GetUserByLogin(user.Login) != null)
+        {
+            return BadRequest("Username already taken");
+        }
         if (!ModelState.IsValid)
         {
             Log.Information("Controller: Model state is invalid");
