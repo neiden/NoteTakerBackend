@@ -438,3 +438,42 @@ token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hid
 2024-04-10 13:48:11.604 -07:00 [INF] Received JWT: 
 2024-04-10 13:48:11.607 -07:00 [INF] Controller called: Logging in user with login Dirkin
 2024-04-10 13:48:11.609 -07:00 [INF] Service called: Getting user with login Dirkin
+2024-04-10 21:11:54.389 -07:00 [INF] Application started
+2024-04-10 21:12:06.542 -07:00 [INF] Received JWT: 
+2024-04-10 21:23:48.890 -07:00 [INF] Application started
+2024-04-10 21:39:01.466 -07:00 [INF] Application started
+2024-04-10 21:49:40.806 -07:00 [INF] Application started
+2024-04-10 21:50:07.938 -07:00 [INF] Application started
+2024-04-10 21:53:41.576 -07:00 [INF] Application started
+2024-04-10 21:55:01.096 -07:00 [INF] Application started
+2024-04-10 21:55:19.276 -07:00 [INF] Application started
+2024-04-10 21:57:14.929 -07:00 [INF] Application started
+2024-04-10 22:00:27.555 -07:00 [INF] Application started
+2024-04-10 22:00:29.956 -07:00 [INF] Received JWT: 
+2024-04-10 22:00:37.784 -07:00 [INF] Received JWT: 
+2024-04-10 22:00:37.989 -07:00 [INF] Controller called: Getting all users
+2024-04-10 22:00:37.992 -07:00 [INF] Service called: Getting all users
+2024-04-10 22:02:36.225 -07:00 [INF] Application started
+2024-04-10 22:02:40.515 -07:00 [INF] Received JWT: 
+2024-04-10 22:02:49.586 -07:00 [INF] Received JWT: 
+2024-04-10 22:02:49.790 -07:00 [INF] Controller called: Getting all users
+2024-04-10 22:02:49.792 -07:00 [INF] Service called: Getting all users
+2024-04-10 22:10:29.259 -07:00 [INF] Application started
+2024-04-10 22:10:32.112 -07:00 [INF] Received JWT: 
+2024-04-10 22:10:38.262 -07:00 [INF] Received JWT: 
+2024-04-10 22:10:38.587 -07:00 [INF] Controller called: Getting all users
+2024-04-10 22:10:38.591 -07:00 [INF] Service called: Getting all users
+2024-04-10 22:11:06.055 -07:00 [INF] Received JWT: 
+2024-04-10 22:11:06.061 -07:00 [INF] Controller called: Getting all users
+2024-04-10 22:11:06.063 -07:00 [INF] Service called: Getting all users
+2024-04-10 22:11:23.036 -07:00 [INF] Received JWT: 
+2024-04-10 22:11:23.046 -07:00 [INF] Controller called: Getting all users
+2024-04-10 22:11:23.048 -07:00 [INF] Service called: Getting all users
+2024-04-10 22:12:01.180 -07:00 [INF] Application started
+2024-04-10 22:12:12.003 -07:00 [INF] Received JWT: 
+2024-04-10 22:12:12.148 -07:00 [INF] Controller called: Getting all users
+2024-04-10 22:12:12.150 -07:00 [INF] Service called: Getting all users
+2024-04-10 22:15:06.923 -07:00 [INF] Application started
+2024-04-10 22:15:13.421 -07:00 [INF] Received JWT: 
+2024-04-10 22:15:13.550 -07:00 [INF] Controller called: Getting all users
+2024-04-10 22:15:13.555 -07:00 [INF] Service called: Getting all users

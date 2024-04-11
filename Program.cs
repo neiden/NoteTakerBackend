@@ -61,7 +61,8 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
-    connection = Environment.GetEnvironmentVariable("AZURE_SQL_CONNECTIONSTRING");
+    builder.Configuration.AddEnvironmentVariables().AddJsonFile("appsettings.json");
+    connection = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
 }
 
 // builder.Services.AddDbContext<PersonDbContext>(options =>
@@ -86,15 +87,19 @@ builder.Services.AddDbContext<Token.Data.TokenContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserService>();
+builder.Services.AddHttpsRedirection(options =>
+{
+    options.HttpsPort = 443;
+});
 
 var app = builder.Build();
 Log.Information("Application started");
 
+app.UseSwagger();
+app.UseSwaggerUI();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
 }
 
 
