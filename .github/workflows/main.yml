@@ -43,4 +43,4 @@ jobs:
           context: .
           push: true
           target: final
-          tags: ${{ secrets.DOCKER_USERNAME }}/${{GITHUB_ENV}}:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{env.GITHUB_ENV}}:latest
