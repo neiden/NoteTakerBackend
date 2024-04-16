@@ -33,16 +33,18 @@ jobs:
         uses: docker/setup-buildx-action@v3
       -
         name: Build and test
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
           context: .
           target: build
           load: true
       -
-        name: Build and push
-        uses: docker/build-push-action@v3
-        with:
-          context: .
-          push: true
-          target: final
-          tags: ${{env.USERNAME}}/${{env.REPO}}:latest
+        name: Build and push without action@v5
+        run: docker push ${{env.USERNAME}}/${{env.REPO}}:latest
+        # name: Build and push
+        # uses: docker/build-push-action@v5
+        # with:
+        #   context: .
+        #   push: true
+        #   target: final
+        #   tags: ${{env.USERNAME}}/${{env.REPO}}:latest
