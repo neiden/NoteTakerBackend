@@ -41,7 +41,7 @@ jobs:
       -
         name: Build and push without action@v5
         run: | 
-          docker tag ${{env.REPO}}-image ${{env.USERNAME}}/${{env.REPO}}
+          docker build . --file Dockerfile --tag ${{env.USERNAME}}/${{env.REPO}}
           docker push ${{env.USERNAME}}/${{env.REPO}}:latest
         # name: Build and push
         # uses: docker/build-push-action@v5
