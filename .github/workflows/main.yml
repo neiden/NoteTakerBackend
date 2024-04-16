@@ -45,4 +45,4 @@ jobs:
           context: .
           push: true
           target: final
-          tags: ${{env.USERNAME}}/${{env.REPO}}:latest
+          tags: ${{env.USERNAME}}/pinkgodzilla/${{env.REPO}}:latest
