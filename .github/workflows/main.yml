@@ -43,4 +43,4 @@ jobs:
           context: .
           push: true
           target: final
-          tags: ${{env.USERNAME}}/${{env.REPO}}:latest
+          tags: pinkgodzilla/${{env.REPO}}:latest
