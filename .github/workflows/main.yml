@@ -43,4 +43,4 @@ jobs:
           context: .
           push: true
           target: final
-          tags: ${{ secrets.DOCKER_USERNAME }}/${{env.REPO}}:latest
+          tags: ${{ env.USERNAME }}/${{env.REPO}}:latest
