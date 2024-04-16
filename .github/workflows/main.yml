@@ -43,4 +43,4 @@ jobs:
           context: .
           push: true
           target: final
-          tags: pinkgodzilla/${{env.REPO}}:latest
+          tags: pinkgodzilla/notetakerbackend:latest
