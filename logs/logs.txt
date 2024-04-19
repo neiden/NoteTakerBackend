@@ -478,3 +478,7 @@ token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hid
 2024-04-10 22:15:13.550 -07:00 [INF] Controller called: Getting all users
 2024-04-10 22:15:13.555 -07:00 [INF] Service called: Getting all users
 2024-04-11 12:37:31.540 -07:00 [INF] Application started
+2024-04-18 11:47:17.802 -07:00 [INF] Application started
+2024-04-18 11:48:22.700 -07:00 [INF] Application started
+2024-04-18 11:48:32.556 -07:00 [INF] Application started
+2024-04-18 11:48:35.185 -07:00 [INF] Received JWT: 
