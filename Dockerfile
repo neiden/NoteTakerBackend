@@ -53,4 +53,5 @@ COPY --from=build /app .
 # and https://github.com/dotnet/dotnet-docker/discussions/4764
 USER $APP_UID
 
-ENTRYPOINT ["dotnet", "TokenTest.dll"]
+#ENTRYPOINT ["dotnet", "TokenTest.dll"]
+CMD ["dotnet", "TokenTest.dll", "--urls", "https://localhost:5001"]
