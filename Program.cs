@@ -87,10 +87,7 @@ builder.Services.AddDbContext<Token.Data.TokenContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserService>();
-builder.Services.AddHttpsRedirection(options =>
-{
-    options.HttpsPort = 443;
-});
+
 
 var app = builder.Build();
 Log.Information("Application started");
