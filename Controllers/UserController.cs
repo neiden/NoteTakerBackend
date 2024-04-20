@@ -6,9 +6,9 @@ using Serilog;
 using System.Security.Cryptography;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
-using Microsoft.AspNetCore.Authorization;
 
 namespace TokenTest.Controllers;
 [Authorize]
