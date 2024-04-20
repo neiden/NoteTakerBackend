@@ -13,7 +13,6 @@ using System.Security.Claims;
 namespace TokenTest.Controllers;
 [Authorize]
 [ApiController]
-[RequireHttps]
 [Route("[controller]")]
 public class UserController : ControllerBase
 {

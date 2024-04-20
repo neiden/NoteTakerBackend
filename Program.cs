@@ -106,7 +106,7 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 });
 
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseCors(AllowedOriginPolicy);
 
