@@ -47,6 +47,7 @@ RUN apk add --no-cache icu-libs
 WORKDIR /app
 
 # Copy everything needed to run the app from the "build" stage.
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
 COPY --from=build /app .
 
 # Switch to a non-privileged user (defined in the base image) that the app will run under.
