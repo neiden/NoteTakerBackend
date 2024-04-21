@@ -64,6 +64,7 @@ else
 {
     builder.Configuration.AddEnvironmentVariables();
     connection = builder.Configuration.GetConnectionString("SQLCONNSTR_string1");
+    Log.Information("Connection string: {0}", connection);
     //connection = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
 }
 
