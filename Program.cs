@@ -6,7 +6,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Security.Claims;
 using Microsoft.AspNetCore.HttpOverrides;
+using Token.Services;
 
+//Possible cause of slow connection; need to remove writeToFile and set minimum level to information
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
@@ -90,6 +92,7 @@ builder.Services.AddDbContext<Token.Data.TokenContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<StudentService>();
 
 
 var app = builder.Build();

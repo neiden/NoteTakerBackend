@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TokenTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc961caf09dc3ccb047f9e06b84f0627e938a049")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e360858b43ff0fb37ba679b5f6bf4988b79f9e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TokenTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TokenTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

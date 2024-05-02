@@ -66,7 +66,6 @@ public class UserController : ControllerBase
         return Ok(new { Token = tokenString, UserId = user.Id });
     }
 
-
     [HttpGet("{id}")]
     public async Task<IActionResult> GetUserById(int id)
     {
@@ -79,7 +78,6 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
-    [AllowAnonymous]
     public async Task<IActionResult> GetAllUsers()
     {
         Log.Information("Controller called: Getting all users");

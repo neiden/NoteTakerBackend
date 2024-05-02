@@ -16,10 +16,12 @@ namespace Token.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Person> Person { get; set; }
+        public DbSet<Student> Student { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().ToTable("User");
             modelBuilder.Entity<Person>().ToTable("Person");
+            modelBuilder.Entity<Student>().ToTable("Student");
         }
 
     }
