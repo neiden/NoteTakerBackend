@@ -1,7 +1,7 @@
 namespace TokenTest.Models;
 public class Student
 {
-    public required string Fname { get; set; }
+    public required string FName { get; set; }
     public int Id { get; set; }
     public required string LName { get; set; }
     public int TeacherId { get; set; }

@@ -66,7 +66,7 @@ public class StudentService
     [HttpPost]
     public async Task CreateStudent(Student student)
     {
-        student.Fname = Encrypt(student.Fname);
+        student.FName = Encrypt(student.FName);
         student.LName = Encrypt(student.LName);
         student.School = Encrypt(student.School);
         _context.Student.Add(student);
@@ -79,7 +79,7 @@ public class StudentService
         var student = await _context.Student.FirstOrDefaultAsync(m => m.Id == id);
         if (student != null)
         {
-            student.Fname = Decrypt(student.Fname);
+            student.FName = Decrypt(student.FName);
             student.LName = Decrypt(student.LName);
             student.School = Decrypt(student.School);
         }
@@ -92,7 +92,7 @@ public class StudentService
         var students = await _context.Student.ToListAsync();
         foreach (var student in students)
         {
-            student.Fname = Decrypt(student.Fname);
+            student.FName = Decrypt(student.FName);
             student.LName = Decrypt(student.LName);
             student.School = Decrypt(student.School);
         }
@@ -105,7 +105,7 @@ public class StudentService
         var students = await _context.Student.Where(m => m.TeacherId == id).ToListAsync();
         foreach (var student in students)
         {
-            student.Fname = Decrypt(student.Fname);
+            student.FName = Decrypt(student.FName);
             student.LName = Decrypt(student.LName);
             student.School = Decrypt(student.School);
         }
@@ -130,7 +130,7 @@ public class StudentService
     [HttpPut]
     public async Task UpdateStudent(Student student)
     {
-        student.Fname = Encrypt(student.Fname);
+        student.FName = Encrypt(student.FName);
         student.LName = Encrypt(student.LName);
         student.School = Encrypt(student.School);
         _context.Entry(student).State = EntityState.Modified;
