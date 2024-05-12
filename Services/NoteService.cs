@@ -69,6 +69,8 @@ public class NoteService
         var noteToEdit = await _context.Note.FirstOrDefaultAsync(m => m.Id == id);
         if (noteToEdit != null)
         {
+            noteToEdit.StudentId = note.StudentId;
+            noteToEdit.Date = note.Date;
             noteToEdit.Content = AesHelper.Encrypt(note.Content, _aes);
             await _context.SaveChangesAsync();
         }
