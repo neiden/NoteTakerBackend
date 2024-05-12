@@ -587,3 +587,73 @@ token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hid
 2024-05-02 11:20:20.133 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTQ2Njk5NDIsImV4cCI6MTcxNDY3NzE0MiwiaWF0IjoxNzE0NjY5OTQyLCJpc3MiOiJpb29vaSJ9.3R1bA8b_HTogeo2tMNz_YgvbTQIXaXZJ7I4I0YLZdOg
 2024-05-02 11:20:20.168 -07:00 [INF] Calling getStudentsByTeacherId with ID of jwt token: 3
 2024-05-02 11:28:57.529 -07:00 [INF] Application started
+2024-05-10 13:22:18.703 -07:00 [INF] Application started
+2024-05-10 13:25:04.659 -07:00 [INF] Application started
+2024-05-10 13:26:00.045 -07:00 [INF] Application started
+2024-05-10 13:26:33.598 -07:00 [INF] Received JWT: 
+2024-05-10 13:27:55.939 -07:00 [INF] Received JWT: 
+2024-05-10 13:27:55.963 -07:00 [WRN] Authorization challenge:    
+2024-05-10 13:28:26.169 -07:00 [INF] Received JWT: 
+2024-05-10 13:28:26.716 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-05-10 13:28:26.723 -07:00 [INF] Service called: Getting user with login Eren
+2024-05-10 13:28:39.740 -07:00 [INF] Controller: User Eren logged in
+2024-05-10 13:30:34.818 -07:00 [INF] Application started
+2024-05-10 13:30:48.456 -07:00 [INF] Received JWT: 
+2024-05-10 13:32:34.660 -07:00 [INF] Received JWT: 
+2024-05-10 13:32:34.674 -07:00 [WRN] Authorization challenge:    
+2024-05-10 13:34:03.397 -07:00 [INF] Received JWT: 
+2024-05-10 13:34:03.401 -07:00 [WRN] Authorization challenge:    
+2024-05-10 13:34:12.291 -07:00 [INF] Received JWT: 
+2024-05-10 13:34:12.296 -07:00 [WRN] Authorization challenge:    
+2024-05-10 13:34:53.930 -07:00 [INF] Application started
+2024-05-10 13:38:06.820 -07:00 [INF] Received JWT: 
+2024-05-10 13:38:06.831 -07:00 [WRN] Authorization challenge:    
+2024-05-10 13:41:42.175 -07:00 [INF] Received JWT: 
+2024-05-10 13:41:42.515 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-05-10 13:41:42.521 -07:00 [INF] Service called: Getting user with login Eren
+2024-05-10 13:41:52.644 -07:00 [INF] Controller: User Eren logged in
+2024-05-10 13:42:28.336 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTUzNzM3MTIsImV4cCI6MTcxNTM4MDkxMiwiaWF0IjoxNzE1MzczNzEyLCJpc3MiOiJpb29vaSJ9.mudp2mn4fBN4VP_EgCoaLkRQJCuteETXoj15FCa9AZw
+2024-05-10 13:47:15.032 -07:00 [INF] Application started
+2024-05-10 13:47:19.520 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTUzNzM3MTIsImV4cCI6MTcxNTM4MDkxMiwiaWF0IjoxNzE1MzczNzEyLCJpc3MiOiJpb29vaSJ9.mudp2mn4fBN4VP_EgCoaLkRQJCuteETXoj15FCa9AZw
+2024-05-10 13:49:45.390 -07:00 [INF] Application started
+2024-05-10 13:50:37.886 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTUzNzM3MTIsImV4cCI6MTcxNTM4MDkxMiwiaWF0IjoxNzE1MzczNzEyLCJpc3MiOiJpb29vaSJ9.mudp2mn4fBN4VP_EgCoaLkRQJCuteETXoj15FCa9AZw
+2024-05-10 13:52:02.757 -07:00 [INF] Application started
+2024-05-10 13:52:06.228 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTUzNzM3MTIsImV4cCI6MTcxNTM4MDkxMiwiaWF0IjoxNzE1MzczNzEyLCJpc3MiOiJpb29vaSJ9.mudp2mn4fBN4VP_EgCoaLkRQJCuteETXoj15FCa9AZw
+2024-05-11 21:50:11.357 -07:00 [INF] Application started
+2024-05-11 21:52:13.814 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTUzNzM3MTIsImV4cCI6MTcxNTM4MDkxMiwiaWF0IjoxNzE1MzczNzEyLCJpc3MiOiJpb29vaSJ9.mudp2mn4fBN4VP_EgCoaLkRQJCuteETXoj15FCa9AZw
+2024-05-11 21:52:14.173 -07:00 [ERR] Authentication failed: Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/10/2024 10:41:52 PM', Current time (UTC): '5/12/2024 4:52:13 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-05-11 21:52:14.190 -07:00 [WRN] Authorization challenge: Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/10/2024 10:41:52 PM', Current time (UTC): '5/12/2024 4:52:13 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration) invalid_token The token expired at '05/10/2024 22:41:52' 
+2024-05-11 21:52:52.516 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTUzNzM3MTIsImV4cCI6MTcxNTM4MDkxMiwiaWF0IjoxNzE1MzczNzEyLCJpc3MiOiJpb29vaSJ9.mudp2mn4fBN4VP_EgCoaLkRQJCuteETXoj15FCa9AZw
+2024-05-11 21:52:52.521 -07:00 [ERR] Authentication failed: Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/10/2024 10:41:52 PM', Current time (UTC): '5/12/2024 4:52:52 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-05-11 21:52:53.084 -07:00 [INF] Controller called: Logging in user with login Eren
+2024-05-11 21:52:53.094 -07:00 [INF] Service called: Getting user with login Eren
+2024-05-11 21:53:06.359 -07:00 [INF] Controller: User Eren logged in
+2024-05-11 21:54:04.000 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:00:35.544 -07:00 [INF] Application started
+2024-05-11 22:00:39.186 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:00:39.730 -07:00 [INF] Controller called: Creating note for student 3
+2024-05-11 22:01:42.322 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:03:42.439 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:05:33.907 -07:00 [INF] Received JWT: 
+2024-05-11 22:05:33.915 -07:00 [WRN] Authorization challenge:    
+2024-05-11 22:05:51.824 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:07:14.612 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:07:21.091 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:07:25.501 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:09:19.693 -07:00 [INF] Application started
+2024-05-11 22:09:24.589 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:10:14.153 -07:00 [INF] Application started
+2024-05-11 22:10:19.528 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:10:19.842 -07:00 [INF] Service called: Getting note with id 0
+2024-05-11 22:12:09.497 -07:00 [INF] Application started
+2024-05-11 22:12:14.006 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MTU0ODk1ODYsImV4cCI6MTcxNTQ5Njc4NiwiaWF0IjoxNzE1NDg5NTg2LCJpc3MiOiJpb29vaSJ9.EFIqCrzfa94DV9PWkAhO0fiMqRBrmiLUl3BLAryMlvo
+2024-05-11 22:12:14.448 -07:00 [INF] Service called: Getting note with id 1

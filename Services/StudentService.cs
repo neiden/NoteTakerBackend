@@ -19,56 +19,14 @@ public class StudentService
         _configuration = configuration;
         _aes = Aes.Create();
         _aes.Key = Convert.FromBase64String(_configuration["AESKEY"]);
-        //TODO Add key as application setting in Azure Web App
-    }
-
-    private string Encrypt(string text)
-    {
-        _aes.GenerateIV();
-        var symmetricEncryptor = _aes.CreateEncryptor(_aes.Key, _aes.IV);
-
-        using (var memoryStream = new MemoryStream())
-        {
-            memoryStream.Write(_aes.IV, 0, _aes.IV.Length);
-
-            using (var cryptoStream = new CryptoStream(memoryStream, symmetricEncryptor, CryptoStreamMode.Write))
-            {
-                using (var streamWriter = new StreamWriter(cryptoStream))
-                {
-                    streamWriter.Write(text);
-                }
-            }
-            return Convert.ToBase64String(memoryStream.ToArray());
-        }
-    }
-
-    private string Decrypt(string encryptedText)
-    {
-        var encryptedBytes = Convert.FromBase64String(encryptedText);
-
-        var iv = new byte[_aes.BlockSize / 8];
-        Array.Copy(encryptedBytes, iv, iv.Length);
-
-        var symmetricDecryptor = _aes.CreateDecryptor(_aes.Key, iv);
-
-        using (var memoryStream = new MemoryStream(encryptedBytes, iv.Length, encryptedBytes.Length - iv.Length))
-        {
-            using (var cryptoStream = new CryptoStream(memoryStream, symmetricDecryptor, CryptoStreamMode.Read))
-            {
-                using (var streamReader = new StreamReader(cryptoStream))
-                {
-                    return streamReader.ReadToEnd();
-                }
-            }
-        }
     }
 
     [HttpPost]
     public async Task CreateStudent(Student student)
     {
-        student.FName = Encrypt(student.FName);
-        student.LName = Encrypt(student.LName);
-        student.School = Encrypt(student.School);
+        student.FName = AesHelper.Encrypt(student.FName, _aes);
+        student.LName = AesHelper.Encrypt(student.LName, _aes);
+        student.School = AesHelper.Encrypt(student.School, _aes);
         _context.Student.Add(student);
         await _context.SaveChangesAsync();
     }
@@ -79,9 +37,9 @@ public class StudentService
         var student = await _context.Student.FirstOrDefaultAsync(m => m.Id == id);
         if (student != null)
         {
-            student.FName = Decrypt(student.FName);
-            student.LName = Decrypt(student.LName);
-            student.School = Decrypt(student.School);
+            student.FName = AesHelper.Decrypt(student.FName, _aes);
+            student.LName = AesHelper.Decrypt(student.LName, _aes);
+            student.School = AesHelper.Decrypt(student.School, _aes);
         }
         return student;
     }
@@ -92,9 +50,9 @@ public class StudentService
         var students = await _context.Student.ToListAsync();
         foreach (var student in students)
         {
-            student.FName = Decrypt(student.FName);
-            student.LName = Decrypt(student.LName);
-            student.School = Decrypt(student.School);
+            student.FName = AesHelper.Decrypt(student.FName, _aes);
+            student.LName = AesHelper.Decrypt(student.LName, _aes);
+            student.School = AesHelper.Decrypt(student.School, _aes);
         }
         return students;
     }
@@ -105,9 +63,9 @@ public class StudentService
         var students = await _context.Student.Where(m => m.TeacherId == id).ToListAsync();
         foreach (var student in students)
         {
-            student.FName = Decrypt(student.FName);
-            student.LName = Decrypt(student.LName);
-            student.School = Decrypt(student.School);
+            student.FName = AesHelper.Decrypt(student.FName, _aes);
+            student.LName = AesHelper.Decrypt(student.LName, _aes);
+            student.School = AesHelper.Decrypt(student.School, _aes);
         }
         return students;
     }
@@ -130,9 +88,9 @@ public class StudentService
     [HttpPut]
     public async Task UpdateStudent(Student student)
     {
-        student.FName = Encrypt(student.FName);
-        student.LName = Encrypt(student.LName);
-        student.School = Encrypt(student.School);
+        student.FName = AesHelper.Encrypt(student.FName, _aes);
+        student.LName = AesHelper.Encrypt(student.LName, _aes);
+        student.School = AesHelper.Encrypt(student.School, _aes);
         _context.Entry(student).State = EntityState.Modified;
         await _context.SaveChangesAsync();
     }

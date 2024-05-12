@@ -17,11 +17,13 @@ namespace Token.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Person> Person { get; set; }
         public DbSet<Student> Student { get; set; }
+        public DbSet<Note> Note { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().ToTable("User");
             modelBuilder.Entity<Person>().ToTable("Person");
             modelBuilder.Entity<Student>().ToTable("Student");
+            modelBuilder.Entity<Note>().ToTable("Note");
         }
 
     }

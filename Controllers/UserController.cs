@@ -48,7 +48,7 @@ public class UserController : ControllerBase
         }
 
         var tokenHandler = new JwtSecurityTokenHandler();
-        var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Secret"]);
+        var key = Encoding.ASCII.GetBytes(_configuration["JWT"]);
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(
@@ -56,7 +56,7 @@ public class UserController : ControllerBase
                 new Claim(ClaimTypes.Name, user.Id.ToString())
             ]),
             Expires = DateTime.UtcNow.AddHours(2),
-            Issuer = _configuration["Jwt:Issuer"],
+            Issuer = _configuration["JWT_ISSUER"],
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
         };
         var token = tokenHandler.CreateToken(tokenDescriptor);
