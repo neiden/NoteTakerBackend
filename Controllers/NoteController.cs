@@ -67,7 +67,7 @@ public class NoteController : ControllerBase
         }
     }
 
-    [HttpDelete("delete/{id}")]
+    [HttpDelete("delete/{noteId}")]
     public async Task<IActionResult> DeleteNoteById(int noteId)
     {
         try
@@ -81,7 +81,7 @@ public class NoteController : ControllerBase
         }
     }
 
-    [HttpPut("update/{id}")]
+    [HttpPut("update/{noteId}")]
     public async Task<IActionResult> UpdateNoteById([FromBody] Note note, int noteId)
     {
         try
