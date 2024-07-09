@@ -38,7 +38,7 @@ public class NoteController : ControllerBase
         }
     }
 
-    [HttpGet("get/{noteId}")]
+    [HttpGet("{noteId}")]
     public async Task<IActionResult> GetNoteById(int noteId)
     {
         var note = await _noteService.GetNoteById(noteId);

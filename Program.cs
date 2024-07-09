@@ -85,7 +85,13 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddDbContext<Token.Data.TokenContext>(options =>
-    options.UseSqlServer(connection));
+    options.UseSqlServer(connection, sqlServerOptionsAction: sqlOptions =>
+    {
+        sqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 10,
+            maxRetryDelay: TimeSpan.FromSeconds(30),
+            errorNumbersToAdd: null);
+    }));
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -94,6 +100,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<StudentService>();
 builder.Services.AddScoped<NoteService>();
+builder.Services.AddScoped<GoalService>();
+builder.Services.AddScoped<DataService>();
 
 
 var app = builder.Build();
