@@ -78,7 +78,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: AllowedOriginPolicy,
         builder =>
         {
-            builder.WithOrigins("https://zealous-bay-0ad4fdf10.5.azurestaticapps.net", "http://localhost:4200", "https://notetakerbackend.azurewebsites.net, https://fluentflow.net")
+            builder.WithOrigins("https://zealous-bay-0ad4fdf10.5.azurestaticapps.net", "http://localhost:4200", "https://notetakerbackend.azurewebsites.net", "https://fluentflow.net")
                 .AllowAnyHeader()
                 .AllowAnyMethod();
         });
