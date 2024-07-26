@@ -20,14 +20,18 @@ namespace Token.Data
         public DbSet<Note> Note { get; set; }
         public DbSet<Goal> Goal { get; set; }
         public DbSet<DataEntry> Data { get; set; }
+        public DbSet<UserToTokenLookup> UserToTokenLookup { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>().HasIndex(u => u.Login).IsUnique();
+            modelBuilder.Entity<User>().HasIndex(u => u.Email).IsUnique();
             modelBuilder.Entity<User>().ToTable("User");
             modelBuilder.Entity<Person>().ToTable("Person");
             modelBuilder.Entity<Student>().ToTable("Student");
             modelBuilder.Entity<Note>().ToTable("Note");
             modelBuilder.Entity<Goal>().ToTable("Goal");
             modelBuilder.Entity<DataEntry>().ToTable("Data");
+            modelBuilder.Entity<UserToTokenLookup>().ToTable("UserToTokenLookup");
         }
 
     }

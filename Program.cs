@@ -102,6 +102,7 @@ builder.Services.AddScoped<StudentService>();
 builder.Services.AddScoped<NoteService>();
 builder.Services.AddScoped<GoalService>();
 builder.Services.AddScoped<DataService>();
+builder.Services.AddScoped<EmailService>();
 
 
 var app = builder.Build();

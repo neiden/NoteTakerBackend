@@ -34,7 +34,6 @@ public class StudentController : ControllerBase
         try
         {
             var authHeader = HttpContext.Request.Headers["Authorization"].ToString();
-            // Extract the JWT token from the Authorization header
             var jwtToken = authHeader.Replace("Bearer ", "");
             int id = int.Parse(JWTParser.GetClaim(jwtToken, "unique_name")!);
             student.TeacherId = id;

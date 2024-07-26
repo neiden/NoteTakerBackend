@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "F290BlNLt3N1nXF6/lsSADT2iDK04cuZgxjzn1ICpp9vLOz2FF/I3lBO7Ja5d8KiWs/onTikDX7oS/h78Qas7g==",
+  "dgSpecHash": "WEstN7EvmHky6SqoqoFU7Pgm/P+48xW908m7rjN17gFQWa2WdqhwsLyrXC4r4s7xTL350A5NlHGBfiu7B6ZdBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pinkgodzilla\\Documents\\TokenTest\\TokenTest.csproj",
   "expectedPackageFiles": [
@@ -46,9 +46,12 @@
     "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\sendgrid\\9.29.3\\sendgrid.9.29.3.nupkg.sha512",
     "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
     "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\serilog.sinks.console\\5.0.1\\serilog.sinks.console.5.0.1.nupkg.sha512",
     "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
+    "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
     "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Pinkgodzilla\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

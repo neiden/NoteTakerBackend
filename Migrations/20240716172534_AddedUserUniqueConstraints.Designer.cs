@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Token.Data;
 
@@ -11,9 +12,11 @@ using Token.Data;
 namespace TokenTest.Migrations
 {
     [DbContext(typeof(TokenContext))]
-    partial class TokenContextModelSnapshot : ModelSnapshot
+    [Migration("20240716172534_AddedUserUniqueConstraints")]
+    partial class AddedUserUniqueConstraints
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -189,12 +192,9 @@ namespace TokenTest.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Email")
+                    b.HasIndex("Login", "Email")
                         .IsUnique()
                         .HasFilter("[Email] IS NOT NULL");
-
-                    b.HasIndex("Login")
-                        .IsUnique();
 
                     b.ToTable("User", (string)null);
                 });
