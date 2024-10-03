@@ -143,3 +143,5 @@ C:\Users\Pinkgodzilla\Documents\TokenTest\obj\Debug\net8.0\ref\TokenTest.dll
 C:\Users\Pinkgodzilla\Documents\TokenTest\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Pinkgodzilla\Documents\TokenTest\bin\Debug\net8.0\SendGrid.dll
 C:\Users\Pinkgodzilla\Documents\TokenTest\bin\Debug\net8.0\StarkbankEcdsa.dll
+C:\Users\Pinkgodzilla\Documents\TokenTest\bin\Debug\net8.0\ExcelDataReader.dll
+C:\Users\Pinkgodzilla\Documents\TokenTest\bin\Debug\net8.0\ExcelDataReader.DataSet.dll

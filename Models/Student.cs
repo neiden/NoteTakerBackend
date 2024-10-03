@@ -8,6 +8,7 @@ public class Student
     public User? Teacher { get; set; }
     public required string School { get; set; }
     public DateTime DueDate { get; set; }
-    public required int Age { get; set; }
+    public required DateTime BirthDate { get; set; }
+    public DateTime EligibilityExpiration { get; set; }
 
 }

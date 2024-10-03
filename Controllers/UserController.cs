@@ -55,6 +55,8 @@ public class UserController : ControllerBase
     [HttpPost("authentication-email")]
     public async Task<IActionResult> SendAuthenticationEmail([FromBody] Login login, string validationToken)
     {
+
+        var student = new List<string>();
         Log.Information("Controller called: Send Authentication Email");
         var user = await _userService.GetUserByLogin(login.Username);
         var to = new EmailAddress(user.Email, user.Login);

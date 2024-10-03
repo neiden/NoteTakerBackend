@@ -149,5 +149,17 @@ namespace TokenTest.Services
             var user = await _context.Users.FirstOrDefaultAsync(m => m.Login == login);
             return user;
         }
+
+        // [HttpPut]
+        // public async Task<bool> UpdateEmail(int id, string email){
+        //     var user = await _context.Users.FirstOrDefaultAsync(m => m.Id == id);
+        //     if (user == null){
+        //         return false;
+        //     }
+        //     user.Email = email;
+        //     _context.Entry(user).State = EntityState.Modified;
+        //     var result = await _context.SaveChangesAsync(); 
+        // }
+
     }
 }

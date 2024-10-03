@@ -116,5 +116,26 @@ public class StudentController : ControllerBase
         }
     }
 
+    [HttpPost("upload")]
+    public async Task<IActionResult> ProcessFile(IFormFile file)
+    {
+        try
+        {
+            if (file == null || file.Length == 0)
+            {
+                return BadRequest("File is empty");
+            }
+            var authHeader = HttpContext.Request.Headers["Authorization"].ToString();
+            var jwtToken = authHeader.Replace("Bearer ", "");
+            int id = int.Parse(JWTParser.GetClaim(jwtToken, "unique_name")!);
+            await _studentService.ProcessFile(file, id);
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Internal server error while processing the file: " + e.Message);
+        }
+    }
+
 
 }

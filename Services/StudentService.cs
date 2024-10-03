@@ -1,6 +1,7 @@
 
 using System.Security.Cryptography;
 using System.Text;
+using ExcelDataReader;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Token.Data;
@@ -95,4 +96,73 @@ public class StudentService
         await _context.SaveChangesAsync();
     }
 
+    public async Task ProcessFile(IFormFile file, int teacherId)
+    {
+        Console.WriteLine("Processing file " + file.FileName);
+        System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+        using (var stream = new MemoryStream())
+        {
+            await file.CopyToAsync(stream);
+            stream.Position = 0;
+            using (var reader = ExcelReaderFactory.CreateReader(stream))
+            {
+
+                var result = reader.AsDataSet();
+                if (result.Tables.Count == 0)
+                {
+                    return;
+                }
+                var table = result.Tables[0]!;
+                var students = new List<Student>();
+
+                for (int i = 1; i < table.Rows.Count; i++)
+                {
+
+                    string FName = table.Rows[i][3].ToString()!;
+                    string LName = table.Rows[i][2].ToString()!;
+                    string School = table.Rows[i][1].ToString()!;
+                    string BirthDateString = table.Rows[i][4].ToString()!;
+                    string EligibilityExpirationString = table.Rows[i][8].ToString()!;
+                    string DueDateString = table.Rows[i][10].ToString()!;
+
+                    DateTime BirthDate;
+                    if (!DateTime.TryParse(BirthDateString, out BirthDate))
+                    {
+                        continue;
+                    }
+
+                    DateTime EligibilityExpiration;
+                    if (!DateTime.TryParse(EligibilityExpirationString, out EligibilityExpiration))
+                    {
+                        continue;
+                    }
+
+                    DateTime DueDate;
+                    if (!DateTime.TryParse(DueDateString, out DueDate))
+                    {
+                        continue;
+                    }
+
+                    int TeacherId = teacherId;
+                    var student = new Student
+                    {
+                        FName = AesHelper.Encrypt(FName, _aes),
+                        LName = AesHelper.Encrypt(LName, _aes),
+                        School = AesHelper.Encrypt(School, _aes),
+                        TeacherId = TeacherId,
+                        BirthDate = BirthDate,
+                        EligibilityExpiration = EligibilityExpiration,
+                        DueDate = DueDate
+                    };
+
+                    students.Add(student);
+
+                }
+
+                await _context.Student.AddRangeAsync(students);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+    }
 }
