@@ -1492,3 +1492,21 @@ The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'Encode
 2024-10-03 14:03:33.272 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3Mjc5ODg4MTMsImV4cCI6MTcyNzk5NjAxMywiaWF0IjoxNzI3OTg4ODEzLCJpc3MiOiJpb29vaSJ9.DI4ZNbiizieDWf5zdCOPHo8Miu0R5EXW0AhPbYPa1ow
 2024-10-03 14:03:33.324 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3Mjc5ODg4MTMsImV4cCI6MTcyNzk5NjAxMywiaWF0IjoxNzI3OTg4ODEzLCJpc3MiOiJpb29vaSJ9.DI4ZNbiizieDWf5zdCOPHo8Miu0R5EXW0AhPbYPa1ow
 2024-10-03 14:03:36.765 -07:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3Mjc5ODg4MTMsImV4cCI6MTcyNzk5NjAxMywiaWF0IjoxNzI3OTg4ODEzLCJpc3MiOiJpb29vaSJ9.DI4ZNbiizieDWf5zdCOPHo8Miu0R5EXW0AhPbYPa1ow
+2024-11-24 17:18:51.098 -08:00 [INF] Application started
+2024-11-24 17:22:02.517 -08:00 [INF] Received JWT: 
+2024-11-24 17:22:02.859 -08:00 [INF] Controller called: Logging in user with login Eren
+2024-11-24 17:22:02.867 -08:00 [INF] Service called: Getting user with login Eren
+2024-11-24 17:23:13.402 -08:00 [INF] Received JWT: 
+2024-11-24 17:23:13.408 -08:00 [INF] Controller called: Logging in user with login Eren
+2024-11-24 17:23:13.410 -08:00 [INF] Service called: Getting user with login Eren
+2024-11-24 17:23:21.342 -08:00 [INF] Controller: User Eren logged in
+2024-11-24 17:23:21.494 -08:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MzI0OTc4MDEsImV4cCI6MTczMjUwNTAwMSwiaWF0IjoxNzMyNDk3ODAxLCJpc3MiOiJpb29vaSJ9.6yPQTfwe3NFzAd2HvNiEE0NIsVra1CDKem7iK5wFIZo
+2024-11-24 17:25:20.684 -08:00 [INF] Received JWT: 
+2024-11-24 17:25:20.692 -08:00 [INF] Controller called: Logging in user with login shadeslayer33@gmail.com
+2024-11-24 17:25:20.696 -08:00 [INF] Service called: Getting user with login shadeslayer33@gmail.com
+2024-11-24 17:25:20.735 -08:00 [INF] Controller: User shadeslayer33@gmail.com logged in
+2024-11-24 17:25:20.809 -08:00 [INF] Received JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJuYmYiOjE3MzI0OTc5MjAsImV4cCI6MTczMjUwNTEyMCwiaWF0IjoxNzMyNDk3OTIwLCJpc3MiOiJpb29vaSJ9.tcHubot3aLiGRiLf2gUQXjcGUfIK3U_3eJMgvMtV2qQ
+2024-11-24 17:25:34.921 -08:00 [INF] Received JWT: 
+2024-11-24 17:25:34.925 -08:00 [INF] Controller called: Logging in user with login shadeslayer33@gmail.comm
+2024-11-24 17:25:34.929 -08:00 [INF] Service called: Getting user with login shadeslayer33@gmail.comm
+2024-11-24 17:25:34.973 -08:00 [INF] Controller: User shadeslayer33@gmail.comm not found

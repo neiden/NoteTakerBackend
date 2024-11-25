@@ -146,7 +146,7 @@ namespace TokenTest.Services
         public async Task<User> GetUserByLogin(string login)
         {
             Log.Information("Service called: Getting user with login {0}", login);
-            var user = await _context.Users.FirstOrDefaultAsync(m => m.Login == login);
+            var user = await _context.Users.FirstOrDefaultAsync(m => m.Login == login || m.Email == login);
             return user;
         }
 
